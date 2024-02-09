@@ -19,7 +19,7 @@
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
             // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
             // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
+            //                     | GUI  | ALT  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | CTRL  |
 
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3        &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
@@ -32,11 +32,11 @@
 
         lower_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
+            // |  F13  | F14 | F15 |  F16 |  F17 |  F18 |                   | BT_cl| BT_0  | BT_1  | BT_2 | BT_3  | BT_4  |
             // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
+            // |       |     | PRSC| DEL  | HOME | P_UP |                   |      |       |       |      |       |       |
+            // |       |     |     | INS  | END  | P_DW |        |  |       |  +   |  -    |  =    |      |   |   |       |
+            //                     | GUI  | ALT  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | CTRL  |
 
             bindings = <
 &kp F13  &kt F14  &kt F15          &kt F16  &kt F17   &kt F18                          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
@@ -49,11 +49,11 @@
 
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
-            //                     |      |      |      |        |  |       |      |       |       |
+            // |       |     |     |      |      |      |                   |  VD  |  Pre  |  PP   |  Nex |  DW   |  Mute |
+            // |       |     |     |      |      |      |                   |      |       |   ^   |      |       |       |
+            // |       |     |     |      |      |      |                   |      |   <-  |   v   |  ->  |       |       |
+            // |       |     |     |      |      |      |        |  |       |  +   |   -   |   =   |      |   \   |       |
+            //                     | GUI  | ALT  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | CTRL  |
 
             bindings = <
 &none  &none  &none  &none   &none   &none                     &kp C_VOLUME_DOWN  &kt C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_UP       &kp C_MUTE
